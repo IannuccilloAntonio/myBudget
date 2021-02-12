@@ -20,6 +20,9 @@ export class DetailPagePage implements OnInit {
   ) {}
   name = "Sisal";
   logo = " ";
+  section = "Casinò"
+  description: String;
+  price: DoubleRange;
   ngOnInit() {
     this.route.params.subscribe(
       (param) => {
@@ -31,4 +34,17 @@ export class DetailPagePage implements OnInit {
     this.navCtrl.pop();
   }
 
+  onViewChange(event: CustomEvent) {
+    this.carica();
+  }
+
+  carica(){
+    console.log(this.section)
+  }
+
+  update(){
+    console.log("Descrizione " + this.description);
+    console.log("Prezzo " + this.price);
+    console.log("tipologia " + this.section)
+  }
 }
