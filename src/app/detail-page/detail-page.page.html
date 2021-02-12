@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="icon-back" (click)="goBack()">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-label class="title">Bilancio {{name}}</ion-label>
+
+  </ion-toolbar>
+
+
+
+  <ion-toolbar class="secondary-toolbar">
+    <ion-grid>
+      <ion-row class="avatar">
+        <ion-avatar>
+          <img src="{{logo}}">
+        </ion-avatar>
+      </ion-row>
+      <ion-row class="name">Da movimentare</ion-row>
+      <ion-row class="course">€1000</ion-row>
+    </ion-grid>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-grid class="grid">
+    <ion-row class="ion-align-items-center">
+      <ion-col>
+        <ion-row>
+          <b>Casinò</b>
+        </ion-row>
+        <ion-row class="row">
+          €500
+        </ion-row>
+      </ion-col>
+      <ion-col>
+
+        <ion-row class="ion-align-items-center">
+          <b>RTP</b>
+        </ion-row>
+        <ion-row class="row">
+          96%
+        </ion-row>
+      </ion-col>
+      <ion-col>
+
+        <ion-row class="ion-align-items-center">
+          <b>Sport</b>
+        </ion-row>
+        <ion-row class="row">
+          €500
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
