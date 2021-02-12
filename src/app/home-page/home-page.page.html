@@ -1,0 +1,70 @@
+<ion-content>
+  <!-- parte superiore con testo e immagine di profilo-->
+  <ion-toolbar>
+    <ion-label class="title">Ciao Marco!</ion-label>
+    <ion-label class="date">{{ today }}</ion-label>
+
+    <ion-avatar slot="end" shape="round" class="buttonProfil" (click)="profileStudent()">
+      <img src="" onerror="this.src='assets/icon/profile_pic.png'">
+    </ion-avatar>
+  </ion-toolbar>
+
+  <!--griglia per la creazione e la posizione dei bottoni-->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <br>
+        <!-- bottone missione con griglia per dividere l'icona dal testo-->
+        <ion-button expand="full" shape="round" class="mission" (click)="missions()">
+          <ion-row>
+            <ion-col>
+              <img src="{{ sisalImage }}" class="dimension">
+              <div>SISAL</div>
+            </ion-col>
+          </ion-row>
+        </ion-button>
+
+        <br>
+
+        <!-- bottone classifica generale con griglia per dividere l'icona dal testo-->
+        <ion-button expand="full" shape="round" class="answer" (click)="startGame()">
+          <ion-row>
+            <ion-col>
+              <img src="{{ eurobetImage }}" class="dimension">
+              <div>Eurobet</div>
+            </ion-col>
+          </ion-row>
+        </ion-button>
+
+        <br>
+
+        <!-- bottone Visualizza partite con griglia per dividere l'icona dal testo-->
+        <ion-button expand="full" shape="round" class="viewMatch" (click)="viewMatch()">
+          <ion-row>
+            <ion-col>
+              <img src="{{ goldbImage }}" class="dimension">
+              <div>GoldBet</div>
+            </ion-col>
+          </ion-row>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <br>
+
+        <!-- bottone sfida individuale con griglia per dividere l'icona dal testo-->
+        <ion-button expand="full" shape="round" class="answer" (click)="startGame()">
+          <ion-row>
+            <ion-col>
+              <img src="{{ snaiImage }}" class="dimension">
+              <div>SNAI</div>
+            </ion-col>
+          </ion-row>
+        </ion-button>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
