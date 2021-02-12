@@ -63,53 +63,50 @@ export class HomePagePage implements OnInit {
   }*/
 
 
-  weeklyRanking() {
-    const name = 'settimanale'
-    // tslint:disable-next-line: variable-name
-    const type_ranking = 1
-    const isProfessor = false
+  sisal() {
+    const name = 'Sisal'
     const navigationExtras: NavigationExtras = {
       state: {
         name,
-        type_ranking,
-        isProfessor
+        logo: this.sisalImage
       }
     }
-    this.router.navigate(['./rankings'], navigationExtras);
+    this.router.navigate(['./detail-page'], navigationExtras);
   }
 
-  globalRanking() {
-    const name = 'globale'
-    // tslint:disable-next-line: variable-name
-    const type_ranking = 0
-    const isProfessor = false
+  eurobet() {
+    const name = 'Eurobet'
     const navigationExtras: NavigationExtras = {
       state: {
         name,
-        type_ranking,
-        isProfessor
+        logo: this.eurobetImage
       }
     }
-    this.router.navigate(['./rankings'], navigationExtras);
+    this.router.navigate(['./detail-page'], navigationExtras);
   }
 
-  missions() {
-    this.router.navigate(['./selection-mission']);
+  snai() {
+    const name = 'Snai'
+    const navigationExtras: NavigationExtras = {
+      state: {
+        name,
+        logo: this.snaiImage
+      }
+    }
+    this.router.navigate(['./detail-page'], navigationExtras);
   }
 
-  viewMatch() {
-    this.router.navigate(['./view-match']);
+  goldbet() {
+    const name = 'Goldbet'
+    const navigationExtras: NavigationExtras = {
+      state: {
+        name,
+        logo: this.goldbImage
+      }
+    }
+    this.router.navigate(['./detail-page'], navigationExtras);
   }
 
-  startGame() {
-    this.storage.set('type', 'Sfida Individuale')
-    this.router.navigate(['./new-game/teachings-list']);
-  }
-
-  startTraining() {
-    this.storage.set('type', 'Allenamento')
-    this.router.navigate(['./new-game/teachings-list']);
-  }
 
   profileStudent() {
     this.router.navigate(['./profile-student']);

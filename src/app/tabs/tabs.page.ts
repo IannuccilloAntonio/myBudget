@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +10,15 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  sisalImage = 'assets/icon_home/sisal.jpg';
+  constructor(
+    private navCtrl: NavController,
+    private storage: Storage,
+    private route: ActivatedRoute,
+    private router: Router,
+  ) {}
 
+  goBack() {
+    this.navCtrl.pop();
+  }
 }

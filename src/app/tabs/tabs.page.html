@@ -1,3 +1,67 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="icon-back" (click)="goBack()">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-label class="title" >Bilancio Sisal</ion-label>
+
+  </ion-toolbar>
+
+
+
+  <ion-toolbar class="secondary-toolbar">
+    <ion-grid>
+      <ion-row class="avatar">
+        <ion-avatar>
+          <img src="{{sisalImage}}">
+        </ion-avatar>
+      </ion-row>
+      <ion-row class="name">Da movimentare</ion-row>
+      <ion-row class="course">€1000</ion-row>
+    </ion-grid>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+        <ion-row>
+          <ion-label>Casinò</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-label>€500</ion-label>
+        </ion-row>
+      </ion-col>
+      <ion-col >
+        <ion-row>
+          <ion-label>RTP</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-label>96%</ion-label>
+        </ion-row>
+      </ion-col>
+      <ion-col >
+        <ion-row>
+          <ion-label>Sport</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-label>€500</ion-label>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+
+
 <ion-tabs>
 
   <ion-tab-bar slot="bottom">
