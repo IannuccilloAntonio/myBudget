@@ -58,4 +58,30 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-segment [(ngModel)]="section" (ionChange)="onViewChange($event)" class="segment">
+    <ion-segment-button value="Casinò">
+      <ion-label class="item">Casinò</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Sport">
+      <ion-label class="item">Sport</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-grid>
+    <ion-row>
+      <ion-input placeholder="Descrizione"
+                 [(ngModel)]="description"></ion-input>
+    </ion-row>
+
+    <ion-row>
+      <ion-input
+      type="number"
+                 placeholder="Prezzo"
+                 [(ngModel)]="price"></ion-input>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button [disabled]="!description || !price"
+              (click)="update()">Aggiungi</ion-button>
 </ion-content>

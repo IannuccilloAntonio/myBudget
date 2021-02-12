@@ -26,7 +26,7 @@
 .icon-back {
   font-size: 21px;
   text-align: left;
-  margin-top: 10px;
+
   color: white;
   font-weight: bold;
 }
@@ -40,7 +40,7 @@
 }
 
 .secondary-toolbar {
-  height: 125px;
+  height: 160px;
   border-radius: 0px 0px 0px 10px;
   margin-left: 5px;
 }
@@ -145,4 +145,55 @@
    padding-top: 8px;
 }
 
+ion-segment {
+  --background: #1c1c1c;
+  margin-top: 8%;
+}
+ion-segment-button {
+  --indicator-color: #8a56ac;
+  --border-radius: 45px 45px 45px 45px;
+  --color-checked: white;
+  --color: #998fa2;
+  font-size: large;
+  --indicator-color: #9c98a0;
+}
+
+ion-grid {
+  margin-top: 4%;
+}
+ion-input {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 5%;
+  --background:#1c1c1c;
+  --color: white;
+
+  --placeholder-color: #998fa2;
+
+  font-size: 2.7vh;
+
+  text-align: center;
+
+  border-radius: 8vh;
+
+  margin-top: 2vh;
+  margin-right: 2vh;
+  margin-left: 2vh;
+}
+
+ion-button {
+  --background: #1c1c1c;
+
+  height: 7vh;
+  font-size: 3vh;
+
+  --padding-end: 6vh;
+  --padding-start: 6vh;
+
+  margin-top: 6vh;
+  margin-bottom: 7vh;
+  margin-left: 25%;
+
+  --border-radius: 100vh;
+}
 
